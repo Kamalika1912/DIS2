@@ -54,9 +54,9 @@
     // server started, let's load the default video and setup the player
     
 
-    _path =[[NSBundle mainBundle] URLForResource:@"Frozen" withExtension:@"mp4"];
+    _path =[[NSBundle mainBundle] pathForResource:@"Frozen"ofType:@"mp4"];
 
-    _playerView.player = [[AVPlayer alloc] initWithURL:_path];
+    _playerView.player = [[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
     [_playerView.player play];
     
     
@@ -79,33 +79,34 @@
     
     switch (channel) {
         case 1:
-            _path = [[NSBundle mainBundle] URLForResource:@"Frozen" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Frozen"ofType:@"mp4"];
             break;
         case 2:
-            _path = [[NSBundle mainBundle] URLForResource:@"Edge" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Strangelove"ofType:@"mp4"];
             break;
         case 3:
-            _path = [[NSBundle mainBundle] URLForResource:@"Strangelove" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Edge"ofType:@"mp4"];
             break;
         case 4:
-            _path = [[NSBundle mainBundle] URLForResource:@"GoT" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"GoT"ofType:@"mp4"];
             break;
         case 5:
-            _path = [[NSBundle mainBundle] URLForResource:@"Matrix" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"X-Men"ofType:@"mp4"];
             break;
         case 6:
-            _path = [[NSBundle mainBundle] URLForResource:@"Hobbit" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Hobbit"ofType:@"mp4"];
             break;
         case 7:
-            _path = [[NSBundle mainBundle] URLForResource:@"X-Men" withExtension:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Matrix"ofType:@"mp4"];
             break;
         default:
             break;
 
     }
-    BOOL playing = (_playerView.player.rate != 0.0f);
-    _playerView.player = NULL;
-    _playerView.player   = [[AVPlayer alloc] initWithURL:_path];
+//    BOOL playing = (_playerView.player.rate != 0.0f);
+//    [_playerView.player pause];
+//    _playerView.player = nil;
+    _playerView.player = [[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
     if (playing) [_playerView.player play];
     
     

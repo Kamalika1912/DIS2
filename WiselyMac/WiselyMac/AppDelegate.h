@@ -15,7 +15,7 @@
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet AVPlayerView *playerView;
-@property NSURL *path;
+@property NSString *path;
 
 
 

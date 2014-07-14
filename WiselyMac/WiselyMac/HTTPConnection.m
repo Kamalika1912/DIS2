@@ -1754,11 +1754,9 @@ static NSMutableArray *recentNonces;
         [app goToTime:[[requestString componentsSeparatedByString:@":"][1] intValue]];
     } else if ([requestString rangeOfString:@"setChannel:"].location != NSNotFound) {
         [app setChannel:[[requestString componentsSeparatedByString:@":"][1] intValue]];
-    } else
+    }
 
-    
-        return;
-    
+
 }
 
 /**
