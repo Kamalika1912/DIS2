@@ -35,6 +35,7 @@
 		353863411973C6B800BF3512 /* Hobbit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633A1973C6B800BF3512 /* Hobbit.mp4 */; };
 		353863421973C6B800BF3512 /* X-Men.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633B1973C6B800BF3512 /* X-Men.mp4 */; };
 		353863441973CA1C00BF3512 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353863431973CA1C00BF3512 /* Security.framework */; };
+		35A8793019743F1600F4E550 /* FullMatch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 35A8792F19743F1600F4E550 /* FullMatch.mp4 */; };
 		35E99F071973C0CD005BA7B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F061973C0CD005BA7B2 /* Cocoa.framework */; };
 		35E99F111973C0CD005BA7B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F0F1973C0CD005BA7B2 /* InfoPlist.strings */; };
 		35E99F131973C0CD005BA7B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E99F121973C0CD005BA7B2 /* main.m */; };
@@ -114,6 +115,7 @@
 		3538633A1973C6B800BF3512 /* Hobbit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobbit.mp4; sourceTree = "<group>"; };
 		3538633B1973C6B800BF3512 /* X-Men.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "X-Men.mp4"; sourceTree = "<group>"; };
 		353863431973CA1C00BF3512 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35A8792F19743F1600F4E550 /* FullMatch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FullMatch.mp4; sourceTree = "<group>"; };
 		35E99F031973C0CD005BA7B2 /* WiselyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiselyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E99F061973C0CD005BA7B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		35E99F091973C0CD005BA7B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -274,6 +276,7 @@
 		35E99F0D1973C0CD005BA7B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35A8792F19743F1600F4E550 /* FullMatch.mp4 */,
 				35FCF1F31973F86E0010A4B9 /* Matrix.mp4 */,
 				353863351973C6B700BF3512 /* Strangelove.mp4 */,
 				353863361973C6B800BF3512 /* Edge.mp4 */,
@@ -392,6 +395,7 @@
 				3538633D1973C6B800BF3512 /* Edge.mp4 in Resources */,
 				3538633F1973C6B800BF3512 /* GoT.mp4 in Resources */,
 				35E99F1F1973C0CD005BA7B2 /* Images.xcassets in Resources */,
+				35A8793019743F1600F4E550 /* FullMatch.mp4 in Resources */,
 				3538633C1973C6B800BF3512 /* Strangelove.mp4 in Resources */,
 				35E99F171973C0CD005BA7B2 /* Credits.rtf in Resources */,
 				35E99F1D1973C0CD005BA7B2 /* MainMenu.xib in Resources */,

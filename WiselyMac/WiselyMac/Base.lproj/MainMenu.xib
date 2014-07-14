@@ -671,14 +671,14 @@
         <window title="WiselyMac" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="821" height="602"/>
+            <rect key="contentRect" x="981" y="461" width="648" height="431"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="821" height="602"/>
+                <rect key="frame" x="0.0" y="0.0" width="648" height="431"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <avPlayerView translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-rg-dhB">
-                        <rect key="frame" x="0.0" y="0.0" width="821" height="602"/>
+                    <avPlayerView autoresizesSubviews="NO" canDrawConcurrently="YES" controlsStyle="none" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-rg-dhB">
+                        <rect key="frame" x="0.0" y="0.0" width="648" height="431"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </avPlayerView>
                 </subviews>

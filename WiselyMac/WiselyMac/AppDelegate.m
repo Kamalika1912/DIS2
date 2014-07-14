@@ -56,10 +56,27 @@
 
     _path =[[NSBundle mainBundle] pathForResource:@"Frozen"ofType:@"mp4"];
 
-    _playerView.player = [[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
-    [_playerView.player play];
     
     
+    _player =[AVPlayer playerWithURL:[NSURL fileURLWithPath:_path]];
+    [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
+    
+    _playerView.player = _player;
+    
+    
+
+    
+    
+    
+    
+    
+//    NSURL *url = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"];
+////    // You may find a test stream at <http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8>.
+//    self.playerItem = [AVPlayerItem playerItemWithURL:url];
+//    [_playerItem addObserver:self forKeyPath:@"status" options:0 context:&ItemStatusContext];
+//    self.player = [AVPlayer playerWithPlayerItem:playerItem];
+//    
+//    self.playerView.player = self.player;
     
     
 }
@@ -69,7 +86,11 @@
     [_playerView.player seekToTime:CMTimeMakeWithSeconds(seconds, 1)];
 }
 -(void)play{
-    [_playerView.player play];
+    if (_player.status == AVPlayerStatusReadyToPlay) {
+        [_player play];
+    } else if (_player.status == AVPlayerStatusFailed) {
+        NSLog(@"NOT READY TO PLAY");
+    }
 }
 -(void)pause{
     [_playerView.player pause];
@@ -79,37 +100,44 @@
     
     switch (channel) {
         case 1:
-            _path =[[NSBundle mainBundle] pathForResource:@"Frozen"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Frozen" ofType:@"mp4"];
             break;
         case 2:
-            _path =[[NSBundle mainBundle] pathForResource:@"Strangelove"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Edge" ofType:@"mp4"];
             break;
         case 3:
-            _path =[[NSBundle mainBundle] pathForResource:@"Edge"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Strangelove" ofType:@"mp4"];
             break;
         case 4:
-            _path =[[NSBundle mainBundle] pathForResource:@"GoT"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"GoT" ofType:@"mp4"];
             break;
         case 5:
-            _path =[[NSBundle mainBundle] pathForResource:@"X-Men"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Matrix" ofType:@"mp4"];
             break;
         case 6:
-            _path =[[NSBundle mainBundle] pathForResource:@"Hobbit"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"Hobbit" ofType:@"mp4"];
             break;
         case 7:
-            _path =[[NSBundle mainBundle] pathForResource:@"Matrix"ofType:@"mp4"];
+            _path =[[NSBundle mainBundle] pathForResource:@"X-Men" ofType:@"mp4"];
+            break;
+        case 8:
+            _path =[[NSBundle mainBundle] pathForResource:@"FullMatch" ofType:@"mp4"];
             break;
         default:
+            _path =[[NSBundle mainBundle] pathForResource:@"X-Men" ofType:@"mp4"];
             break;
 
     }
 //    BOOL playing = (_playerView.player.rate != 0.0f);
 //    [_playerView.player pause];
 //    _playerView.player = nil;
-   
+    [_player removeObserver:self forKeyPath:@"status" context:nil];
+    _playerView.player = NULL;
+    _player = NULL;
     _player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:_path]];
     [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
-    _playerView.player = _player; //[[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
+    _playerView.player = _player;
+    
     //if (playing)
 //    [_playerView.player play];
     
@@ -126,7 +154,7 @@
         if (_player.status == AVPlayerStatusReadyToPlay) {
             [_player play];
         } else if (_player.status == AVPlayerStatusFailed) {
-            // something went wrong. player.error should contain some information
+            NSLog(@"NOT READY TO PLAY");// something went wrong. player.error should contain some information
         }
     }
 }
