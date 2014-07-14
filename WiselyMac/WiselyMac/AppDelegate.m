@@ -12,6 +12,7 @@
 #import "DDTTYLogger.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <CoreMedia/CoreMEdia.h>
 
 @implementation AppDelegate
 
@@ -64,7 +65,15 @@
 }
 
 
-
+-(void)goToTime:(NSInteger)seconds{
+    [_playerView.player seekToTime:CMTimeMakeWithSeconds(seconds, 1)];
+}
+-(void)play{
+    [_playerView.player play];
+}
+-(void)pause{
+    [_playerView.player pause];
+}
 
 -(void)setChannel:(NSInteger)channel {
     
@@ -94,9 +103,10 @@
             break;
 
     }
-    
-    _playerView.player = [[AVPlayer alloc] initWithURL:_path];
-    [_playerView.player play];
+    BOOL playing = (_playerView.player.rate != 0.0f);
+    _playerView.player = NULL;
+    _playerView.player   = [[AVPlayer alloc] initWithURL:_path];
+    if (playing) [_playerView.player play];
     
     
 }

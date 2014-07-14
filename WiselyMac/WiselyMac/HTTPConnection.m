@@ -1743,23 +1743,20 @@ static NSMutableArray *recentNonces;
     
     AppDelegate *app = (AppDelegate *)[NSApp delegate];
     
-    NSString* channel= [NSString stringWithUTF8String:[postDataChunk bytes]];
+    NSString* requestString= [NSString stringWithUTF8String:[postDataChunk bytes]];
 
-    NSLog(@"set channel to : %d", [channel intValue]);
-    [app setChannel:[channel intValue]];
+    if ([requestString isEqualToString:@"play"]) {
+        [app play];
+    } else if ([requestString isEqualToString:@"pause"]) {
+        [app pause];
+    } else if ([requestString rangeOfString:@"goToTime:"].location != NSNotFound) {
+        [app goToTime:[[requestString componentsSeparatedByString:@":"][1] intValue]];
+    } else if ([requestString rangeOfString:@"setChannel:"].location != NSNotFound) {
+        [app setChannel:[[requestString componentsSeparatedByString:@":"][1] intValue]];
+    } else
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        return;
     
 }
 

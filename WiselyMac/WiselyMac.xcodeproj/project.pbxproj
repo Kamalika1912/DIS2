@@ -49,6 +49,7 @@
 		35E99F311973C0CD005BA7B2 /* WiselyMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E99F301973C0CD005BA7B2 /* WiselyMacTests.m */; };
 		35E99F3C1973C11B005BA7B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */; };
 		35E99F3D1973C11B005BA7B2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3B1973C11B005BA7B2 /* AVKit.framework */; };
+		35FCF1F21973DB560010A4B9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FCF1F11973DB560010A4B9 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		35E99F301973C0CD005BA7B2 /* WiselyMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiselyMacTests.m; sourceTree = "<group>"; };
 		35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		35E99F3B1973C11B005BA7B2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		35FCF1F11973DB560010A4B9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FCF1F21973DB560010A4B9 /* CoreMedia.framework in Frameworks */,
 				353863441973CA1C00BF3512 /* Security.framework in Frameworks */,
 				35E99F071973C0CD005BA7B2 /* Cocoa.framework in Frameworks */,
 				35E99F3C1973C11B005BA7B2 /* AVFoundation.framework in Frameworks */,
@@ -164,6 +167,7 @@
 		353863341973C3F200BF3512 /* SERVER */ = {
 			isa = PBXGroup;
 			children = (
+				353863111973C26600BF3512 /* HTTPConnection.m */,
 				353862F31973C22900BF3512 /* DDAbstractDatabaseLogger.h */,
 				353862F41973C22900BF3512 /* DDAbstractDatabaseLogger.m */,
 				353862F51973C22900BF3512 /* DDASLLogger.h */,
@@ -186,7 +190,6 @@
 				3538630E1973C26600BF3512 /* HTTPServer.h */,
 				3538630F1973C26600BF3512 /* HTTPServer.m */,
 				353863101973C26600BF3512 /* HTTPConnection.h */,
-				353863111973C26600BF3512 /* HTTPConnection.m */,
 				353863121973C26600BF3512 /* HTTPMessage.h */,
 				353863131973C26600BF3512 /* HTTPMessage.m */,
 				353863141973C26600BF3512 /* HTTPResponse.h */,
@@ -234,6 +237,7 @@
 		35E99F051973C0CD005BA7B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35FCF1F11973DB560010A4B9 /* CoreMedia.framework */,
 				353863431973CA1C00BF3512 /* Security.framework */,
 				35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */,
 				35E99F3B1973C11B005BA7B2 /* AVKit.framework */,
@@ -257,10 +261,10 @@
 		35E99F0C1973C0CD005BA7B2 /* WiselyMac */ = {
 			isa = PBXGroup;
 			children = (
-				353863341973C3F200BF3512 /* SERVER */,
 				35E99F181973C0CD005BA7B2 /* AppDelegate.h */,
 				35E99F191973C0CD005BA7B2 /* AppDelegate.m */,
 				35E99F1B1973C0CD005BA7B2 /* MainMenu.xib */,
+				353863341973C3F200BF3512 /* SERVER */,
 				35E99F1E1973C0CD005BA7B2 /* Images.xcassets */,
 				35E99F0D1973C0CD005BA7B2 /* Supporting Files */,
 			);

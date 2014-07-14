@@ -20,5 +20,8 @@
 
 
 -(void) setChannel:(NSInteger)channel;
+-(void) play;
+-(void) pause;
+-(void) goToTime:(NSInteger)seconds;
 
 @end
