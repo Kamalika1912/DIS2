@@ -135,6 +135,7 @@
     _playerView.player = NULL;
     _player = NULL;
     _player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:_path]];
+    if (channel == 8) [self goToTime:1200];
     [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
     _playerView.player = _player;
     
