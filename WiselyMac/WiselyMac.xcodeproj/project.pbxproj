@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		353862FD1973C22900BF3512 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 353862F41973C22900BF3512 /* DDAbstractDatabaseLogger.m */; };
+		353862FE1973C22900BF3512 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 353862F61973C22900BF3512 /* DDASLLogger.m */; };
+		353862FF1973C22900BF3512 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 353862F81973C22900BF3512 /* DDFileLogger.m */; };
+		353863001973C22900BF3512 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 353862FA1973C22900BF3512 /* DDLog.m */; };
+		353863011973C22900BF3512 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 353862FC1973C22900BF3512 /* DDTTYLogger.m */; };
+		353863061973C23E00BF3512 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863031973C23E00BF3512 /* ContextFilterLogFormatter.m */; };
+		353863071973C23E00BF3512 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863051973C23E00BF3512 /* DispatchQueueLogFormatter.m */; };
+		3538630A1973C25500BF3512 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863091973C25500BF3512 /* GCDAsyncSocket.m */; };
+		353863171973C26600BF3512 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538630D1973C26600BF3512 /* HTTPAuthenticationRequest.m */; };
+		353863181973C26600BF3512 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538630F1973C26600BF3512 /* HTTPServer.m */; };
+		353863191973C26600BF3512 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863111973C26600BF3512 /* HTTPConnection.m */; };
+		3538631A1973C26600BF3512 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863131973C26600BF3512 /* HTTPMessage.m */; };
+		3538631B1973C26600BF3512 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863161973C26600BF3512 /* WebSocket.m */; };
+		353863261973C27800BF3512 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538631D1973C27800BF3512 /* HTTPDataResponse.m */; };
+		353863271973C27800BF3512 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538631F1973C27800BF3512 /* HTTPFileResponse.m */; };
+		353863281973C27800BF3512 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863211973C27800BF3512 /* HTTPRedirectResponse.m */; };
+		353863291973C27800BF3512 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863231973C27800BF3512 /* HTTPAsyncFileResponse.m */; };
+		3538632A1973C27800BF3512 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863251973C27800BF3512 /* HTTPDynamicFileResponse.m */; };
+		353863311973C28400BF3512 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538632C1973C28400BF3512 /* DDData.m */; };
+		353863321973C28400BF3512 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3538632E1973C28400BF3512 /* DDNumber.m */; };
+		353863331973C28400BF3512 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 353863301973C28400BF3512 /* DDRange.m */; };
+		3538633C1973C6B800BF3512 /* Strangelove.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863351973C6B700BF3512 /* Strangelove.mp4 */; };
+		3538633D1973C6B800BF3512 /* Edge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863361973C6B800BF3512 /* Edge.mp4 */; };
+		3538633E1973C6B800BF3512 /* Frozen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863371973C6B800BF3512 /* Frozen.mp4 */; };
+		3538633F1973C6B800BF3512 /* GoT.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863381973C6B800BF3512 /* GoT.mp4 */; };
+		353863401973C6B800BF3512 /* Matrix.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863391973C6B800BF3512 /* Matrix.mp4 */; };
+		353863411973C6B800BF3512 /* Hobbit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633A1973C6B800BF3512 /* Hobbit.mp4 */; };
+		353863421973C6B800BF3512 /* X-Men.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633B1973C6B800BF3512 /* X-Men.mp4 */; };
+		353863441973CA1C00BF3512 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353863431973CA1C00BF3512 /* Security.framework */; };
+		35E99F071973C0CD005BA7B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F061973C0CD005BA7B2 /* Cocoa.framework */; };
+		35E99F111973C0CD005BA7B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F0F1973C0CD005BA7B2 /* InfoPlist.strings */; };
+		35E99F131973C0CD005BA7B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E99F121973C0CD005BA7B2 /* main.m */; };
+		35E99F171973C0CD005BA7B2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F151973C0CD005BA7B2 /* Credits.rtf */; };
+		35E99F1A1973C0CD005BA7B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E99F191973C0CD005BA7B2 /* AppDelegate.m */; };
+		35E99F1D1973C0CD005BA7B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F1B1973C0CD005BA7B2 /* MainMenu.xib */; };
+		35E99F1F1973C0CD005BA7B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F1E1973C0CD005BA7B2 /* Images.xcassets */; };
+		35E99F261973C0CD005BA7B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F251973C0CD005BA7B2 /* XCTest.framework */; };
+		35E99F271973C0CD005BA7B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F061973C0CD005BA7B2 /* Cocoa.framework */; };
+		35E99F2F1973C0CD005BA7B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35E99F2D1973C0CD005BA7B2 /* InfoPlist.strings */; };
+		35E99F311973C0CD005BA7B2 /* WiselyMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E99F301973C0CD005BA7B2 /* WiselyMacTests.m */; };
+		35E99F3C1973C11B005BA7B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */; };
+		35E99F3D1973C11B005BA7B2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3B1973C11B005BA7B2 /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35E99F281973C0CD005BA7B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35E99EFB1973C0CD005BA7B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35E99F021973C0CD005BA7B2;
+			remoteInfo = WiselyMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		353862F31973C22900BF3512 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		353862F41973C22900BF3512 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		353862F51973C22900BF3512 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		353862F61973C22900BF3512 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		353862F71973C22900BF3512 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		353862F81973C22900BF3512 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		353862F91973C22900BF3512 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		353862FA1973C22900BF3512 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		353862FB1973C22900BF3512 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		353862FC1973C22900BF3512 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		353863021973C23E00BF3512 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		353863031973C23E00BF3512 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		353863041973C23E00BF3512 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		353863051973C23E00BF3512 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		353863081973C25500BF3512 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		353863091973C25500BF3512 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		3538630B1973C26600BF3512 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		3538630C1973C26600BF3512 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		3538630D1973C26600BF3512 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		3538630E1973C26600BF3512 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		3538630F1973C26600BF3512 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		353863101973C26600BF3512 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		353863111973C26600BF3512 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		353863121973C26600BF3512 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		353863131973C26600BF3512 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		353863141973C26600BF3512 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		353863151973C26600BF3512 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		353863161973C26600BF3512 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		3538631C1973C27800BF3512 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		3538631D1973C27800BF3512 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		3538631E1973C27800BF3512 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		3538631F1973C27800BF3512 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		353863201973C27800BF3512 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		353863211973C27800BF3512 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		353863221973C27800BF3512 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		353863231973C27800BF3512 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		353863241973C27800BF3512 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		353863251973C27800BF3512 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		3538632B1973C28400BF3512 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		3538632C1973C28400BF3512 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		3538632D1973C28400BF3512 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		3538632E1973C28400BF3512 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		3538632F1973C28400BF3512 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		353863301973C28400BF3512 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		353863351973C6B700BF3512 /* Strangelove.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strangelove.mp4; sourceTree = "<group>"; };
+		353863361973C6B800BF3512 /* Edge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Edge.mp4; sourceTree = "<group>"; };
+		353863371973C6B800BF3512 /* Frozen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Frozen.mp4; sourceTree = "<group>"; };
+		353863381973C6B800BF3512 /* GoT.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoT.mp4; sourceTree = "<group>"; };
+		353863391973C6B800BF3512 /* Matrix.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Matrix.mp4; sourceTree = "<group>"; };
+		3538633A1973C6B800BF3512 /* Hobbit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobbit.mp4; sourceTree = "<group>"; };
+		3538633B1973C6B800BF3512 /* X-Men.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "X-Men.mp4"; sourceTree = "<group>"; };
+		353863431973CA1C00BF3512 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35E99F031973C0CD005BA7B2 /* WiselyMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiselyMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E99F061973C0CD005BA7B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		35E99F091973C0CD005BA7B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		35E99F0A1973C0CD005BA7B2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		35E99F0B1973C0CD005BA7B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35E99F0E1973C0CD005BA7B2 /* WiselyMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiselyMac-Info.plist"; sourceTree = "<group>"; };
+		35E99F101973C0CD005BA7B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35E99F121973C0CD005BA7B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35E99F141973C0CD005BA7B2 /* WiselyMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiselyMac-Prefix.pch"; sourceTree = "<group>"; };
+		35E99F161973C0CD005BA7B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		35E99F181973C0CD005BA7B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35E99F191973C0CD005BA7B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35E99F1C1973C0CD005BA7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		35E99F1E1973C0CD005BA7B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		35E99F241973C0CD005BA7B2 /* WiselyMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiselyMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E99F251973C0CD005BA7B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		35E99F2C1973C0CD005BA7B2 /* WiselyMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiselyMacTests-Info.plist"; sourceTree = "<group>"; };
+		35E99F2E1973C0CD005BA7B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35E99F301973C0CD005BA7B2 /* WiselyMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiselyMacTests.m; sourceTree = "<group>"; };
+		35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		35E99F3B1973C11B005BA7B2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35E99F001973C0CD005BA7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353863441973CA1C00BF3512 /* Security.framework in Frameworks */,
+				35E99F071973C0CD005BA7B2 /* Cocoa.framework in Frameworks */,
+				35E99F3C1973C11B005BA7B2 /* AVFoundation.framework in Frameworks */,
+				35E99F3D1973C11B005BA7B2 /* AVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E99F211973C0CD005BA7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E99F271973C0CD005BA7B2 /* Cocoa.framework in Frameworks */,
+				35E99F261973C0CD005BA7B2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353863341973C3F200BF3512 /* SERVER */ = {
+			isa = PBXGroup;
+			children = (
+				353862F31973C22900BF3512 /* DDAbstractDatabaseLogger.h */,
+				353862F41973C22900BF3512 /* DDAbstractDatabaseLogger.m */,
+				353862F51973C22900BF3512 /* DDASLLogger.h */,
+				353862F61973C22900BF3512 /* DDASLLogger.m */,
+				353862F71973C22900BF3512 /* DDFileLogger.h */,
+				353862F81973C22900BF3512 /* DDFileLogger.m */,
+				353862F91973C22900BF3512 /* DDLog.h */,
+				353862FA1973C22900BF3512 /* DDLog.m */,
+				353862FB1973C22900BF3512 /* DDTTYLogger.h */,
+				353862FC1973C22900BF3512 /* DDTTYLogger.m */,
+				353863021973C23E00BF3512 /* ContextFilterLogFormatter.h */,
+				353863031973C23E00BF3512 /* ContextFilterLogFormatter.m */,
+				353863041973C23E00BF3512 /* DispatchQueueLogFormatter.h */,
+				353863051973C23E00BF3512 /* DispatchQueueLogFormatter.m */,
+				353863081973C25500BF3512 /* GCDAsyncSocket.h */,
+				353863091973C25500BF3512 /* GCDAsyncSocket.m */,
+				3538630B1973C26600BF3512 /* HTTPLogging.h */,
+				3538630C1973C26600BF3512 /* HTTPAuthenticationRequest.h */,
+				3538630D1973C26600BF3512 /* HTTPAuthenticationRequest.m */,
+				3538630E1973C26600BF3512 /* HTTPServer.h */,
+				3538630F1973C26600BF3512 /* HTTPServer.m */,
+				353863101973C26600BF3512 /* HTTPConnection.h */,
+				353863111973C26600BF3512 /* HTTPConnection.m */,
+				353863121973C26600BF3512 /* HTTPMessage.h */,
+				353863131973C26600BF3512 /* HTTPMessage.m */,
+				353863141973C26600BF3512 /* HTTPResponse.h */,
+				353863151973C26600BF3512 /* WebSocket.h */,
+				353863161973C26600BF3512 /* WebSocket.m */,
+				3538631C1973C27800BF3512 /* HTTPDataResponse.h */,
+				3538631D1973C27800BF3512 /* HTTPDataResponse.m */,
+				3538631E1973C27800BF3512 /* HTTPFileResponse.h */,
+				3538631F1973C27800BF3512 /* HTTPFileResponse.m */,
+				353863201973C27800BF3512 /* HTTPRedirectResponse.h */,
+				353863211973C27800BF3512 /* HTTPRedirectResponse.m */,
+				353863221973C27800BF3512 /* HTTPAsyncFileResponse.h */,
+				353863231973C27800BF3512 /* HTTPAsyncFileResponse.m */,
+				353863241973C27800BF3512 /* HTTPDynamicFileResponse.h */,
+				353863251973C27800BF3512 /* HTTPDynamicFileResponse.m */,
+				3538632B1973C28400BF3512 /* DDData.h */,
+				3538632C1973C28400BF3512 /* DDData.m */,
+				3538632D1973C28400BF3512 /* DDNumber.h */,
+				3538632E1973C28400BF3512 /* DDNumber.m */,
+				3538632F1973C28400BF3512 /* DDRange.h */,
+				353863301973C28400BF3512 /* DDRange.m */,
+			);
+			name = SERVER;
+			sourceTree = "<group>";
+		};
+		35E99EFA1973C0CD005BA7B2 = {
+			isa = PBXGroup;
+			children = (
+				35E99F0C1973C0CD005BA7B2 /* WiselyMac */,
+				35E99F2A1973C0CD005BA7B2 /* WiselyMacTests */,
+				35E99F051973C0CD005BA7B2 /* Frameworks */,
+				35E99F041973C0CD005BA7B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35E99F041973C0CD005BA7B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E99F031973C0CD005BA7B2 /* WiselyMac.app */,
+				35E99F241973C0CD005BA7B2 /* WiselyMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E99F051973C0CD005BA7B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353863431973CA1C00BF3512 /* Security.framework */,
+				35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */,
+				35E99F3B1973C11B005BA7B2 /* AVKit.framework */,
+				35E99F061973C0CD005BA7B2 /* Cocoa.framework */,
+				35E99F251973C0CD005BA7B2 /* XCTest.framework */,
+				35E99F081973C0CD005BA7B2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35E99F081973C0CD005BA7B2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35E99F091973C0CD005BA7B2 /* AppKit.framework */,
+				35E99F0A1973C0CD005BA7B2 /* CoreData.framework */,
+				35E99F0B1973C0CD005BA7B2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		35E99F0C1973C0CD005BA7B2 /* WiselyMac */ = {
+			isa = PBXGroup;
+			children = (
+				353863341973C3F200BF3512 /* SERVER */,
+				35E99F181973C0CD005BA7B2 /* AppDelegate.h */,
+				35E99F191973C0CD005BA7B2 /* AppDelegate.m */,
+				35E99F1B1973C0CD005BA7B2 /* MainMenu.xib */,
+				35E99F1E1973C0CD005BA7B2 /* Images.xcassets */,
+				35E99F0D1973C0CD005BA7B2 /* Supporting Files */,
+			);
+			path = WiselyMac;
+			sourceTree = "<group>";
+		};
+		35E99F0D1973C0CD005BA7B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				353863351973C6B700BF3512 /* Strangelove.mp4 */,
+				353863361973C6B800BF3512 /* Edge.mp4 */,
+				353863371973C6B800BF3512 /* Frozen.mp4 */,
+				353863381973C6B800BF3512 /* GoT.mp4 */,
+				353863391973C6B800BF3512 /* Matrix.mp4 */,
+				3538633A1973C6B800BF3512 /* Hobbit.mp4 */,
+				3538633B1973C6B800BF3512 /* X-Men.mp4 */,
+				35E99F0E1973C0CD005BA7B2 /* WiselyMac-Info.plist */,
+				35E99F0F1973C0CD005BA7B2 /* InfoPlist.strings */,
+				35E99F121973C0CD005BA7B2 /* main.m */,
+				35E99F141973C0CD005BA7B2 /* WiselyMac-Prefix.pch */,
+				35E99F151973C0CD005BA7B2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35E99F2A1973C0CD005BA7B2 /* WiselyMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				35E99F301973C0CD005BA7B2 /* WiselyMacTests.m */,
+				35E99F2B1973C0CD005BA7B2 /* Supporting Files */,
+			);
+			path = WiselyMacTests;
+			sourceTree = "<group>";
+		};
+		35E99F2B1973C0CD005BA7B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35E99F2C1973C0CD005BA7B2 /* WiselyMacTests-Info.plist */,
+				35E99F2D1973C0CD005BA7B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35E99F021973C0CD005BA7B2 /* WiselyMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E99F341973C0CD005BA7B2 /* Build configuration list for PBXNativeTarget "WiselyMac" */;
+			buildPhases = (
+				35E99EFF1973C0CD005BA7B2 /* Sources */,
+				35E99F001973C0CD005BA7B2 /* Frameworks */,
+				35E99F011973C0CD005BA7B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiselyMac;
+			productName = WiselyMac;
+			productReference = 35E99F031973C0CD005BA7B2 /* WiselyMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35E99F231973C0CD005BA7B2 /* WiselyMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E99F371973C0CD005BA7B2 /* Build configuration list for PBXNativeTarget "WiselyMacTests" */;
+			buildPhases = (
+				35E99F201973C0CD005BA7B2 /* Sources */,
+				35E99F211973C0CD005BA7B2 /* Frameworks */,
+				35E99F221973C0CD005BA7B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35E99F291973C0CD005BA7B2 /* PBXTargetDependency */,
+			);
+			name = WiselyMacTests;
+			productName = WiselyMacTests;
+			productReference = 35E99F241973C0CD005BA7B2 /* WiselyMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35E99EFB1973C0CD005BA7B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "MCP 2014";
+				TargetAttributes = {
+					35E99F231973C0CD005BA7B2 = {
+						TestTargetID = 35E99F021973C0CD005BA7B2;
+					};
+				};
+			};
+			buildConfigurationList = 35E99EFE1973C0CD005BA7B2 /* Build configuration list for PBXProject "WiselyMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35E99EFA1973C0CD005BA7B2;
+			productRefGroup = 35E99F041973C0CD005BA7B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35E99F021973C0CD005BA7B2 /* WiselyMac */,
+				35E99F231973C0CD005BA7B2 /* WiselyMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E99F011973C0CD005BA7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353863421973C6B800BF3512 /* X-Men.mp4 in Resources */,
+				35E99F111973C0CD005BA7B2 /* InfoPlist.strings in Resources */,
+				3538633E1973C6B800BF3512 /* Frozen.mp4 in Resources */,
+				353863411973C6B800BF3512 /* Hobbit.mp4 in Resources */,
+				3538633D1973C6B800BF3512 /* Edge.mp4 in Resources */,
+				3538633F1973C6B800BF3512 /* GoT.mp4 in Resources */,
+				353863401973C6B800BF3512 /* Matrix.mp4 in Resources */,
+				35E99F1F1973C0CD005BA7B2 /* Images.xcassets in Resources */,
+				3538633C1973C6B800BF3512 /* Strangelove.mp4 in Resources */,
+				35E99F171973C0CD005BA7B2 /* Credits.rtf in Resources */,
+				35E99F1D1973C0CD005BA7B2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E99F221973C0CD005BA7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E99F2F1973C0CD005BA7B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E99EFF1973C0CD005BA7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353863001973C22900BF3512 /* DDLog.m in Sources */,
+				353862FE1973C22900BF3512 /* DDASLLogger.m in Sources */,
+				35E99F1A1973C0CD005BA7B2 /* AppDelegate.m in Sources */,
+				353863171973C26600BF3512 /* HTTPAuthenticationRequest.m in Sources */,
+				35E99F131973C0CD005BA7B2 /* main.m in Sources */,
+				353863071973C23E00BF3512 /* DispatchQueueLogFormatter.m in Sources */,
+				353863261973C27800BF3512 /* HTTPDataResponse.m in Sources */,
+				353863181973C26600BF3512 /* HTTPServer.m in Sources */,
+				353863281973C27800BF3512 /* HTTPRedirectResponse.m in Sources */,
+				353863311973C28400BF3512 /* DDData.m in Sources */,
+				353863321973C28400BF3512 /* DDNumber.m in Sources */,
+				353862FD1973C22900BF3512 /* DDAbstractDatabaseLogger.m in Sources */,
+				3538630A1973C25500BF3512 /* GCDAsyncSocket.m in Sources */,
+				353863291973C27800BF3512 /* HTTPAsyncFileResponse.m in Sources */,
+				3538632A1973C27800BF3512 /* HTTPDynamicFileResponse.m in Sources */,
+				353863191973C26600BF3512 /* HTTPConnection.m in Sources */,
+				353863011973C22900BF3512 /* DDTTYLogger.m in Sources */,
+				3538631B1973C26600BF3512 /* WebSocket.m in Sources */,
+				353863271973C27800BF3512 /* HTTPFileResponse.m in Sources */,
+				353862FF1973C22900BF3512 /* DDFileLogger.m in Sources */,
+				353863061973C23E00BF3512 /* ContextFilterLogFormatter.m in Sources */,
+				353863331973C28400BF3512 /* DDRange.m in Sources */,
+				3538631A1973C26600BF3512 /* HTTPMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35E99F201973C0CD005BA7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E99F311973C0CD005BA7B2 /* WiselyMacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35E99F291973C0CD005BA7B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35E99F021973C0CD005BA7B2 /* WiselyMac */;
+			targetProxy = 35E99F281973C0CD005BA7B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35E99F0F1973C0CD005BA7B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E99F101973C0CD005BA7B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35E99F151973C0CD005BA7B2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E99F161973C0CD005BA7B2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		35E99F1B1973C0CD005BA7B2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E99F1C1973C0CD005BA7B2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		35E99F2D1973C0CD005BA7B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E99F2E1973C0CD005BA7B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35E99F321973C0CD005BA7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35E99F331973C0CD005BA7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		35E99F351973C0CD005BA7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiselyMac/WiselyMac-Prefix.pch";
+				INFOPLIST_FILE = "WiselyMac/WiselyMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35E99F361973C0CD005BA7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiselyMac/WiselyMac-Prefix.pch";
+				INFOPLIST_FILE = "WiselyMac/WiselyMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		35E99F381973C0CD005BA7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiselyMac.app/Contents/MacOS/WiselyMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiselyMac/WiselyMac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WiselyMacTests/WiselyMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		35E99F391973C0CD005BA7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WiselyMac.app/Contents/MacOS/WiselyMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiselyMac/WiselyMac-Prefix.pch";
+				INFOPLIST_FILE = "WiselyMacTests/WiselyMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35E99EFE1973C0CD005BA7B2 /* Build configuration list for PBXProject "WiselyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E99F321973C0CD005BA7B2 /* Debug */,
+				35E99F331973C0CD005BA7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E99F341973C0CD005BA7B2 /* Build configuration list for PBXNativeTarget "WiselyMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E99F351973C0CD005BA7B2 /* Debug */,
+				35E99F361973C0CD005BA7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E99F371973C0CD005BA7B2 /* Build configuration list for PBXNativeTarget "WiselyMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E99F381973C0CD005BA7B2 /* Debug */,
+				35E99F391973C0CD005BA7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35E99EFB1973C0CD005BA7B2 /* Project object */;
+}
