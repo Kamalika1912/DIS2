@@ -1744,7 +1744,8 @@ static NSMutableArray *recentNonces;
     AppDelegate *app = (AppDelegate *)[NSApp delegate];
     
     NSString* requestString= [NSString stringWithUTF8String:[postDataChunk bytes]];
-
+    NSLog(requestString);
+    
     if ([requestString isEqualToString:@"play"]) {
         [app play];
     } else if ([requestString isEqualToString:@"pause"]) {

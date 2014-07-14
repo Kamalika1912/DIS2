@@ -32,7 +32,6 @@
 		3538633D1973C6B800BF3512 /* Edge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863361973C6B800BF3512 /* Edge.mp4 */; };
 		3538633E1973C6B800BF3512 /* Frozen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863371973C6B800BF3512 /* Frozen.mp4 */; };
 		3538633F1973C6B800BF3512 /* GoT.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863381973C6B800BF3512 /* GoT.mp4 */; };
-		353863401973C6B800BF3512 /* Matrix.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 353863391973C6B800BF3512 /* Matrix.mp4 */; };
 		353863411973C6B800BF3512 /* Hobbit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633A1973C6B800BF3512 /* Hobbit.mp4 */; };
 		353863421973C6B800BF3512 /* X-Men.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3538633B1973C6B800BF3512 /* X-Men.mp4 */; };
 		353863441973CA1C00BF3512 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353863431973CA1C00BF3512 /* Security.framework */; };
@@ -50,6 +49,7 @@
 		35E99F3C1973C11B005BA7B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */; };
 		35E99F3D1973C11B005BA7B2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E99F3B1973C11B005BA7B2 /* AVKit.framework */; };
 		35FCF1F21973DB560010A4B9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FCF1F11973DB560010A4B9 /* CoreMedia.framework */; };
+		35FCF1F41973F86E0010A4B9 /* Matrix.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 35FCF1F31973F86E0010A4B9 /* Matrix.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +111,6 @@
 		353863361973C6B800BF3512 /* Edge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Edge.mp4; sourceTree = "<group>"; };
 		353863371973C6B800BF3512 /* Frozen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Frozen.mp4; sourceTree = "<group>"; };
 		353863381973C6B800BF3512 /* GoT.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoT.mp4; sourceTree = "<group>"; };
-		353863391973C6B800BF3512 /* Matrix.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Matrix.mp4; sourceTree = "<group>"; };
 		3538633A1973C6B800BF3512 /* Hobbit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hobbit.mp4; sourceTree = "<group>"; };
 		3538633B1973C6B800BF3512 /* X-Men.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "X-Men.mp4"; sourceTree = "<group>"; };
 		353863431973CA1C00BF3512 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -137,6 +136,7 @@
 		35E99F3A1973C11B005BA7B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		35E99F3B1973C11B005BA7B2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		35FCF1F11973DB560010A4B9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		35FCF1F31973F86E0010A4B9 /* Matrix.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Matrix.mp4; path = ../Matrix.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,11 +274,11 @@
 		35E99F0D1973C0CD005BA7B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35FCF1F31973F86E0010A4B9 /* Matrix.mp4 */,
 				353863351973C6B700BF3512 /* Strangelove.mp4 */,
 				353863361973C6B800BF3512 /* Edge.mp4 */,
 				353863371973C6B800BF3512 /* Frozen.mp4 */,
 				353863381973C6B800BF3512 /* GoT.mp4 */,
-				353863391973C6B800BF3512 /* Matrix.mp4 */,
 				3538633A1973C6B800BF3512 /* Hobbit.mp4 */,
 				3538633B1973C6B800BF3512 /* X-Men.mp4 */,
 				35E99F0E1973C0CD005BA7B2 /* WiselyMac-Info.plist */,
@@ -386,11 +386,11 @@
 			files = (
 				353863421973C6B800BF3512 /* X-Men.mp4 in Resources */,
 				35E99F111973C0CD005BA7B2 /* InfoPlist.strings in Resources */,
+				35FCF1F41973F86E0010A4B9 /* Matrix.mp4 in Resources */,
 				3538633E1973C6B800BF3512 /* Frozen.mp4 in Resources */,
 				353863411973C6B800BF3512 /* Hobbit.mp4 in Resources */,
 				3538633D1973C6B800BF3512 /* Edge.mp4 in Resources */,
 				3538633F1973C6B800BF3512 /* GoT.mp4 in Resources */,
-				353863401973C6B800BF3512 /* Matrix.mp4 in Resources */,
 				35E99F1F1973C0CD005BA7B2 /* Images.xcassets in Resources */,
 				3538633C1973C6B800BF3512 /* Strangelove.mp4 in Resources */,
 				35E99F171973C0CD005BA7B2 /* Credits.rtf in Resources */,
