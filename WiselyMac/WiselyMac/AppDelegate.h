@@ -16,8 +16,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet AVPlayerView *playerView;
 @property NSString *path;
-
-
+@property AVPlayer *player;
 
 -(void) setChannel:(NSInteger)channel;
 -(void) play;

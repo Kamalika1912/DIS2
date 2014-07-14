@@ -106,8 +106,12 @@
 //    BOOL playing = (_playerView.player.rate != 0.0f);
 //    [_playerView.player pause];
 //    _playerView.player = nil;
-    _playerView.player = [[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
-    if (playing) [_playerView.player play];
+   
+    _player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:_path]];
+    [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
+    _playerView.player = _player; //[[AVPlayer alloc] initWithURL:[NSURL fileURLWithPath:_path]];
+    //if (playing)
+//    [_playerView.player play];
     
     
 }
@@ -116,7 +120,16 @@
 
 
 
-
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                        change:(NSDictionary *)change context:(void *)context {
+    if (object == _player && [keyPath isEqualToString:@"status"]) {
+        if (_player.status == AVPlayerStatusReadyToPlay) {
+            [_player play];
+        } else if (_player.status == AVPlayerStatusFailed) {
+            // something went wrong. player.error should contain some information
+        }
+    }
+}
 
 
 
