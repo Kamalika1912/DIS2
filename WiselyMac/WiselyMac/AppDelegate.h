@@ -19,7 +19,7 @@
 @property NSMutableArray *assets;
 @property AVPlayer *player;
 @property NSMutableArray *Items;
-
+@property NSInteger channel;
 -(void) setChannel:(NSInteger)channel;
 -(void) play;
 -(void) pause;

@@ -97,7 +97,7 @@
 }
 
 -(void)setChannel:(NSInteger)channel {
-    
+    _channel = channel;
     switch (channel) {
         case 1:
             _path =[[NSBundle mainBundle] pathForResource:@"Frozen" ofType:@"mp4"];
@@ -135,7 +135,7 @@
     _playerView.player = NULL;
     _player = NULL;
     _player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:_path]];
-    if (channel == 8) [self goToTime:1200];
+    
     [_player addObserver:self forKeyPath:@"status" options:0 context:nil];
     _playerView.player = _player;
     
@@ -154,6 +154,7 @@
     if (object == _player && [keyPath isEqualToString:@"status"]) {
         if (_player.status == AVPlayerStatusReadyToPlay) {
             [_player play];
+            if (_channel == 8) [self goToTime:1605];
         } else if (_player.status == AVPlayerStatusFailed) {
             NSLog(@"NOT READY TO PLAY");// something went wrong. player.error should contain some information
         }
